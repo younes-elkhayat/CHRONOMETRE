@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "Digital-7";
+    src: url("digital-7-font/Digital7-rg1mL.ttf");
+}
+body{
+    background: linear-gradient(to right,#08a9ff,#505050);
+}
+.chronometre{
+    text-align: center;
+    margin-top: 20%;
+   }
+.temps{
+    padding: 1.2em;
+    font-family: "Digital-7";
+    font-size: 1.8em;
+}
+.mono{
+    font-family: monospace;
+    text-transform: uppercase;
+}
+button{
+    border-radius: 5px;
+    background: none;
+    font-size: larger;
+    margin-inline: 0.7em;
+    font-weight: 600;
+    padding: 0.2em;
+    padding-inline: 1em;
+}
+button:hover{
+    color: black;
+}
+.red{
+    background-color: red;
+    border-color: #840000;
+    color: #ffffff;
+}
+.green{
+    background-color: limegreen;
+    border-color: #008000;    
+    color: #ffffff;
+
+}
+.yellow{
+    background-color: yellow;
+    border-color: #787800;    
+    color: #ffffff;
+    
+
+}
