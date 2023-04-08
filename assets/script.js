@@ -41,27 +41,6 @@ function timer(){
      // disable l'evenement click apres une seule click
      startId.setAttribute("disabled","")
 }
-console.log(timer)
-/**function chrono (){
-    let d = new Date;
-    let ms = d.getMilliseconds;
-    let sec = d.getSeconds;
-    let min = d.getMinutes;
-    let h = d.getHours;
-    
-    if (ms < 10){ ms = 00 + ms }
-     else if(ms < 100){ ms = 0 + ms};
-    if (sec < 10){ sec = 00 + sec };
-    if (min < 10){ min = 00 + min };
-    if (h < 10){ h = 00 + h };
-
-    chronoId.innerHTML = h +" <span class='mono'>h</span>"
-    + min +" <span class='mono'>min</span>"
-    + sec +" <span class='mono'>sec</span>"
-    + ms +" <span class='mono'>ms</span>";
-
-    timerVal = setInterval("chrono()",0);
-} **/
 
 let stopId = document.querySelector("#stopId")
     stopId.addEventListener("click",fnctStopChrono);
@@ -81,6 +60,7 @@ let resetId = document.querySelector("#resetId")
         miliseconds=0
 
         clearInterval(timerVal);
+        startId.removeAttribute("disabled","")
 
         chronoId.innerHTML = hours +" <span class='mono'>h</span> "
     + minutes +" <span class='mono'>min</span> "
